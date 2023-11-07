@@ -1,0 +1,13 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/img/bryugge-gorod-v-belgii-1.jpg),
+    url(../assets/img/7c61f652e10257cbd2d54ac7a2db59d1f475954bad876b949347a477b2b446b6.jpg);
+  background-size: 300px, auto;
+  background-repeat: no-repeat, repeat;
+  background-position: 100% 0;
+}
+
+h1 {
+  text-align: center;
+}

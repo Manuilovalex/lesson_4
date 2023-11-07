@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="../css/styles.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+</head>
+
+<body>
+
+  <h1>Registration</h1>
+
+  <nav>
+    <ul>
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="catalog.html">Catalog</a></li>
+      <li><a href="contacts.html">Contacts</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="page-nav.html">Page-nav</a></li>
+      <li><a href="registration.html">Registration</a></li>
+    </ul>
+  </nav>
+
+  <form action="https://tests.fomenko.top/echo/index.php" method="get">
+    <fieldset>
+      <legend>#1 Заполните форму для регистрации</legend>
+
+      <div>
+        <label for="surname">Фамилия</label>
+        <input type="text" name="surname" id="surname" placeholder="Фамилия">
+      </div>
+
+      <div>
+        <label for="name">Имя</label>
+        <input type="text" name="name" id="name" placeholder="Имя">
+      </div>
+
+      <div>
+        <label for="patronymic">Отчество</label>
+        <input type="text" name="patronymic" id="patronymic" placeholder="Отчество">
+      </div>
+
+      <div>
+        <label for="file">Загрузить фото</label>
+        <input id="file" name="file" type="file">
+      </div>
+
+      <div>
+        <label for="Email">Email</label>
+        <input type="email" name="Email" id="Email" placeholder="Email">
+      </div>
+
+      <div>
+        <label for="password">Пароль</label>
+        <input name="password" id="password" placeholder="Пароль" type="password">
+      </div>
+
+      <div>
+        <label for="url">Адрес сайта</label>
+        <input name="url" id="url" placeholder="Адрес сайта" type="url" value="https://mysite.name">
+      </div>
+
+      <div>
+        <label for="date">Дата рождения</label>
+        <input id="date" name="date" type="date">
+      </div>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>#2 Укажите пол</legend>
+
+      <div>
+        <input id="gender-male" name="gender" type="radio" value="male">
+        <label for="gender-male">Мужской</label>
+      </div>
+
+      <div>
+        <input id="gender-female" name="gender" type="radio" value="male">
+        <label for="gender-female">Женский</label>
+      </div>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>#3 Заполните дополнительные данные</legend>
+
+      <div>
+        <p>Выберете предпочитаемую кухню:</p>
+      </div>
+
+      <div>
+        <input id="kitchen1" name="kitchen" type="checkbox" value="ua">
+        <label for="kitchen1">Украинская</label>
+      </div>
+
+      <div>
+        <input id="kitchen2" name="kitchen" type="checkbox" value="gr">
+        <label for="kitchen2">Грузинская</label>
+      </div>
+
+      <div>
+        <input id="kitchen3" name="kitchen" type="checkbox" value="pl">
+        <label for="kitchen3">Польская</label>
+      </div>
+
+      <div>
+        <input id="kitchen4" name="kitchen" type="checkbox" value="ch">
+        <label for="kitchen4">Чешская</label>
+      </div>
+
+      <div>
+        <label for="about_yourself">О себе</label>
+        <textarea name="about_yourself" id="about_yourself" cols="30" rows="10" placeholder="Немного о себе"></textarea>
+      </div>
+
+      <div>
+        <button type="submit">Отправить</button>
+      </div>
+
+      <div>
+        <button type="reset">Очистить поля</button>
+      </div>
+
+    </fieldset>
+  </form>
+
+  <div>
+    <footer>Alex_Manuylov &copy;</footer>
+  </div>
+
+</body>
+
+</html>
