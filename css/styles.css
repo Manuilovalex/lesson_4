@@ -31,6 +31,7 @@ h2 {
   margin: 0;
   font-family: "Times New Roman", Times, serif;
 }
+
 .body2::before {
   content: "";
   align-items: center;
@@ -40,7 +41,11 @@ h2 {
   width: 100%;
   height: 100vh;
   background-color: aqua;
-  background-image: url(../assets/img/eff131e3-300x251.jpg);
+  background-image: url(../assets/img/bryugge-gorod-v-belgii-1.jpg),
+    url(../assets/img/eff131e3-300x251.jpg);
+  background-repeat: no-repeat, repeat;
+  background-size: 100px;
+  background-position: top right, 0;
 }
 
 .header {
@@ -53,10 +58,10 @@ h2 {
 
 .container {
   text-align: center;
-  margin: 0px 20px;
+  margin: auto;
   padding-left: 20px;
   padding-right: 20px;
-  width: auto;
+  width: 100%;
   max-width: 1280px;
 }
 
