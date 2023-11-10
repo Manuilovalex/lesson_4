@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
   text-align: center;
@@ -7,11 +11,80 @@ h2 {
   text-align: center;
 }
 
-.body1 {
+footer {
+  bottom: 0;
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+fieldset {
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: rgb(13, 188, 98);
+  border-radius: 10px;
+}
+
+figure {
+  display: inline-block;
+  margin: 15px;
+}
+
+legend {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: auto;
+  max-width: 500px;
+  font-size: 23px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+label {
+  line-height: 35px;
+  margin-bottom: 7px;
+}
+
+button {
+  margin: 5px;
+  width: 40%;
+  padding-top: 5px;
+  font-size: 1em;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+textarea,
+input {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid indigo;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  margin-bottom: 0px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 75px;
+  max-height: 33vh;
+}
+
+.main_all_pages {
   margin: 0;
   font-family: "Times New Roman", Times, serif;
 }
-.body1::before {
+
+.main_all_pages::before {
   content: "";
   align-items: center;
   position: fixed;
@@ -27,12 +100,12 @@ h2 {
   background-position: top right, 0;
 }
 
-.body2 {
+.mine_gallery_page {
   margin: 0;
   font-family: "Times New Roman", Times, serif;
 }
 
-.body2::before {
+.mine_gallery_page::before {
   content: "";
   align-items: center;
   position: fixed;
@@ -65,6 +138,15 @@ h2 {
   max-width: 1280px;
 }
 
+.container_form {
+  text-align: left;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  max-width: 1280px;
+}
+
 .navbar-list {
   display: flex;
   justify-content: center;
@@ -72,7 +154,8 @@ h2 {
   list-style: none;
   gap: 30px;
 }
-.navbar-link {
+.navbar-link_header {
+  font-size: 15px;
   color: white;
   background-color: blue;
   padding: 0.75em 1.5em;
@@ -83,12 +166,12 @@ h2 {
   border-radius: 10px;
 }
 
-.navbar-link:hover {
+.navbar-link_header:hover {
   background-color: chocolate;
   transform: scale(1.05) translateZ(10px);
 }
 
-.navbar-link1 {
+.navbar-link_page_nav {
   color: blue;
   padding: 7px;
   justify-content: center;
@@ -99,14 +182,18 @@ h2 {
   border-radius: 5px;
 }
 
-.navbar-link1:hover {
+.navbar-link_page_nav:hover {
   text-align: center;
   background-color: rgb(230, 144, 32);
   padding: 7px;
   transform: scale(1.05) translateZ(10px);
 }
-.navbar-link2 {
+
+.navbar-link_foto_gallery,
+.navbar-link_article_read_more {
   color: maroon;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
   justify-content: center;
   text-decoration: none;
   text-decoration-line: underline;
@@ -114,21 +201,13 @@ h2 {
   margin-left: auto;
 }
 
-.navbar-link2:hover {
+.navbar-link_foto_gallery:hover,
+.navbar-link_article_read_more:hover {
   color: darkorchid;
   text-decoration: none;
 }
 
-.navbar-link3 {
-  color: crimson;
-  justify-content: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding-top: 5px;
-  margin-left: auto;
-}
-
-.navbar-link4 {
+.navbar-link_article_comment {
   color: rgb(88, 85, 85);
   justify-content: center;
   text-decoration: none;
@@ -136,7 +215,7 @@ h2 {
   margin-left: auto;
 }
 
-.navbar-link5 {
+.navbar-link_article_num {
   color: rgb(125, 13, 13);
   justify-content: center;
   border: aqua;
@@ -157,86 +236,27 @@ h2 {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-footer {
-  bottom: 0;
-  width: 100%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-  padding-bottom: 5px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-fieldset {
-  max-width: 500px;
-  margin: 20px auto;
-  background-color: rgb(13, 188, 98);
-  border-radius: 10px;
-}
-
-legend {
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: auto;
-  max-width: 500px;
-  font-size: 23px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
-
-label {
-  display: block;
-  margin-bottom: 7px;
-}
-
-button,
-textarea,
-input {
-  width: 100%;
-  padding: 10px 20px;
-  border-radius: 7px;
-  border: 1px solid indigo;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-  width: auto;
-}
-
-input[type="radio"] + label,
-input[type="checkbox"] + label {
-  margin-bottom: 15px;
-}
-
-textarea {
-  resize: vertical;
-  min-height: 75px;
-  max-height: 33vh;
-}
-
 .form-group {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.navbar1 {
+.navbar {
   position: static;
-  font-size: 22px;
+  font-size: 18px;
   color: black;
   font-family: sans-serif;
   display: grid;
   list-style: none;
 }
 
-.navbar-list1 {
+.navbar-list_catalog {
   background-color: rgb(164, 164, 225);
   text-align: center;
   position: relative;
   padding: 7px 7px;
   max-width: 250px;
-  font-size: 22px;
+  font-size: 18px;
   color: #b01f1f;
   display: flex;
   content: "";
@@ -244,7 +264,7 @@ textarea {
   margin-left: 5px;
 }
 
-.navbar-list1::before {
+.navbar-list_catalog ::before {
   position: absolute;
   top: 6px;
   left: -30px;
@@ -257,7 +277,7 @@ textarea {
   width: 25px;
 }
 
-.navbar-list2::after {
+.navbar-list_catalog_upd::after {
   content: "new";
   background-color: rgb(255, 255, 39);
   color: red;
@@ -271,7 +291,7 @@ textarea {
   background-color: aqua;
   position: relative;
   padding: 1px 5px;
-  font-size: 32px;
+  font-size: 23px;
   color: #210505;
   display: flex;
   max-width: 150px;
@@ -295,7 +315,26 @@ textarea {
   width: 25px;
 }
 
+.container-page {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.main-greeting {
+  font-size: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: deeppink;
+}
+
+.main-picture {
+  border-radius: 20px;
+}
+
 .inner-image {
+  border: 5px solid rgb(200, 243, 7);
+  align-items: center;
   border: 5px solid rgb(68, 218, 103);
 }
 .inner-image:hover {
