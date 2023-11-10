@@ -333,6 +333,8 @@ textarea {
 }
 
 .inner-image {
+  height: 300;
+  width: 400;
   border: 5px solid rgb(200, 243, 7);
   align-items: center;
   border: 5px solid rgb(68, 218, 103);
