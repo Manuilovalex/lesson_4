@@ -264,7 +264,7 @@ textarea {
   margin-left: 5px;
 }
 
-.navbar-list_catalog ::before {
+.navbar-list_catalog::before {
   position: absolute;
   top: 6px;
   left: -30px;
