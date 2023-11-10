@@ -1,30 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="../css/styles.css">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
   <title>Contacts</title>
 </head>
 
-<body>
+<body class="body1">
 
-  <h1>Contacts</h1>
+  <div class="container">
+    <h1>Contacts</h1>
+  </div>
 
-  <nav>
-    <ul>
-      <li><a href="../index.html">Index</a></li>
-      <li><a href="articles.html">Articles</a></li>
-      <li><a href="catalog.html">Catalog</a></li>
-      <li><a href="contacts.html">Contacts</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="page-nav.html">Page-nav</a></li>
-      <li><a href="registration.html">Registration</a></li>
-    </ul>
-  </nav>
+  <div class="container">
+    <header class="header">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href="../index.html">Index</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="articles.html">Articles</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="catalog.html">Catalog</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="contacts.html">Contacts</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="page-nav.html">Page-nav</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="registration.html">Registration</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
 
-  <div>
+  <div class="container">
     <h2>Офис 15</h2>
     <p>Адрес: Украина, 02000, Киев ул. Софиевская, 19/18</p>
     <p>График работы: Пн. - пт. 9:00 - 17:00</p>
@@ -35,46 +55,49 @@
       referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 
-  <div>
+  <div class="container">
     <h3>Обратная связь:</h3>
   </div>
 
-  <div>
-    <form action="https://tests.fomenko.top/echo/index.php" method="get">
+  <div class="container">
+    <fieldset>
+      <div class="container">
+        <form action="https://tests.fomenko.top/echo/index.php" method="get">
 
-      <div>
-        <label for="login">Имя</label>
-        <input type="text" name="login" id="login" placeholder="Имя...">
+          <div>
+            <label for="login">Имя</label>
+            <input type="text" name="login" id="login" placeholder="Имя...">
+          </div>
+
+          <div>
+            <label for="phone">Телефон</label>
+            <input type="text" name="phone" id="phone" placeholder="+380...">
+          </div>
+
+          <div>
+            <label for="Email">Email</label>
+            <input type="email" name="Email" id="Email" placeholder="Email...">
+          </div>
+
+          <div>
+            <label for="questions">Задать вопрос</label>
+            <textarea name="questions" id="questions" cols="30" rows="10" placeholder="Введите вопрос..."></textarea>
+          </div>
+
+          <div>
+            <button type="submit">Отправить</button>
+          </div>
+
+          <div>
+            <button type="reset">Очистить поля</button>
+          </div>
+        </form>
       </div>
-
-      <div>
-        <label for="phone">Телефон</label>
-        <input type="text" name="phone" id="phone" placeholder="+380...">
-      </div>
-
-      <div>
-        <label for="Email">Email</label>
-        <input type="email" name="Email" id="Email" placeholder="Email...">
-      </div>
-
-      <div>
-        <label for="questions">Задать вопрос</label>
-        <textarea name="questions" id="questions" cols="30" rows="10" placeholder="Введите вопрос..."></textarea>
-      </div>
-
-      <div>
-        <button type="submit">Отправить</button>
-      </div>
-
-      <div>
-        <button type="reset">Очистить поля</button>
-      </div>
-
-    </form>
+    </fieldset>
   </div>
 
-  <div>
-    <footer>Alex_Manuylov &copy;</footer>
+  <div class="container">
+    <footer class="footer">Alex_Manuylov &copy;</footer>
   </div>
 
 </body>
